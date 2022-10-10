@@ -157,15 +157,16 @@ footer form {
    color: black;
    text-align: start;
    transition: 0.5s ease;
+   box-shadow: 0 0 10px;
 }
 
 footer form input {
    width: 100%;
 }
 
-input[type=submit] {
+input[type="submit"] {
    color: white;
-   background-color: #6E8DE5;
+   background-color: #6e8de5;
    border: none;
    padding: 10px;
    border-radius: 10px;
