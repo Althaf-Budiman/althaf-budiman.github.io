@@ -157,7 +157,7 @@ footer form {
    color: black;
    text-align: start;
    transition: 0.5s ease;
-   box-shadow: 0 0 10px;
+   box-shadow: 0 0 10px black;
 }
 
 footer form input {
