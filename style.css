@@ -176,7 +176,7 @@ input[type="submit"] {
 }
 
 textarea#message {
-   width: 100%;
+   min-width: 100%;
    box-sizing: border-box;
 }
 
