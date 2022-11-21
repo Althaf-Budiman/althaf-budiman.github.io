@@ -1,6 +1,5 @@
 * {
    margin: 0;
-   box-sizing: border-box;
 }
 
 html {
@@ -178,6 +177,7 @@ input[type="submit"] {
 
 textarea#message {
    width: 100%;
+   box-sizing: border-box;
 }
 
 @media screen and (max-width: 767px) {
