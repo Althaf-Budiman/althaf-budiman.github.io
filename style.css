@@ -37,6 +37,12 @@ nav p {
    margin-left: 30px;
 }
 
+.hamburger,
+.hamburger-container,
+.hamburger-link {
+   display: none;
+}
+
 nav ul ul {
    display: none;
    position: absolute;
@@ -99,9 +105,8 @@ header {
    transition: 0.5s;
 }
 
-.hero-img:hover {
-   transition: 0.5s;
-   transform: scale(1.03);
+.hero-img img {
+   width: 400px;
 }
 
 .blob {
@@ -109,6 +114,10 @@ header {
    left: 44em;
    bottom: 1em;
    width: 69em;
+}
+
+.blob svg {
+   width: 100%;
 }
 
 .hero-about-button {
@@ -269,6 +278,61 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
+   .hamburger {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: white;
+   }
+   .hamburger-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      float: right;
+      margin-right: 40px;
+      margin-top: 22px;
+   }
+   .hamburger-container:hover {
+      cursor: pointer;
+   }
+
+   .hamburger-link {
+      position: fixed;
+      width: 100%;
+      background-color: rgba(57, 59, 66, 0.558);
+      z-index: 10;
+      text-align: center;
+   }
+
+   .hamburger-link li {
+      padding: 10px;
+      display: block;
+   }
+
+   nav ul {
+      display: none;
+   }
+
+   .hero-img {
+      position: relative;
+      left: 0em;
+      bottom: 1em;
+      z-index: 1;
+      transition: 0.5s;
+   }
+
+   .hero-img img {
+      width: 150px;
+   }
+
+   .blob {
+      position: absolute;
+      left: 0;
+      bottom: 19em;
+      width: 30em;
+      z-index: 0;
+   }
+
    .flex-skill {
       gap: 8px;
       flex-direction: column;
@@ -288,5 +352,20 @@ svg {
    }
    .certificate-item img {
       width: 25em;
+   }
+
+   .project-item {
+      column-count: 1;
+   }
+   .project-item img {
+      width: 20em;
+   }
+   .project-item p,
+   .project-item h3 {
+      margin-right: 0;
+      text-align: center;
+   }
+   .project-view-project {
+      margin: 30px auto;
    }
 }

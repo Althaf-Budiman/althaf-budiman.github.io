@@ -12,6 +12,15 @@
    <body>
       <nav>
          <p><a href="#hero">Nawfal Althaf Budiman</a></p>
+
+         <!-- Hamburger -->
+         <div class="hamburger-container">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+         </div>
+         <!-- Akhir Hamburger -->
+
          <ul>
             <li>
                <a href="index.html"
@@ -32,18 +41,32 @@
          </ul>
       </nav>
 
+      <!-- Hamburger Link -->
+      <div class="hamburger-link">
+         <ul>
+            <a href="#about">
+               <li>About Me</li>
+            </a>
+            <a href="#skill"><li>My Skills</li></a>
+            <a href="#certificate"><li>My Certificates</li></a>
+            <a href="#project"><li>My Projects</li></a>
+            <a href="#contact"><li>Contact Me</li></a>
+         </ul>
+      </div>
+      <!-- Akhir Hamburger Link -->
+
       <header>
          <div class="hero" id="hero">
+            <div class="hero-img" data-aos="fade-left" data-aos-duration="800">
+               <img src="foto-altop-removebg-preview.png" />
+            </div>
             <div class="hero-about" data-aos="fade-right" data-aos-duration="800">
                <h1 style="color: rgb(255, 183, 0)">Hello! I'am, 🙌</h1>
                <h2>Nawfal Althaf Budiman</h2>
                <p style="opacity: 0.7">Software Engineer Student</p>
             </div>
-            <div class="hero-img" data-aos="fade-left" data-aos-duration="800">
-               <img src="foto-altop-removebg-preview.png" width="400" />
-            </div>
             <div class="blob" data-aos="fade-left" data-aos-duration="800">
-               <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+               <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blobSvg">
                   <g transform="translate(171.31652069091797, -21.372047424316406)">
                      <defs>
                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -202,5 +225,6 @@
       <script>
          AOS.init();
       </script>
+      <script src="script.js"></script>
    </body>
 </html>
