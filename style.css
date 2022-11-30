@@ -88,36 +88,19 @@ nav ul li ul li {
 header {
    width: 100%;
    padding-top: 1em;
-   display: flex;
 }
 
 .hero {
-   margin: 10em;
-   gap: 45em;
+   margin: 6em;
    color: white;
+   display: flex;
+   width: auto;
+   justify-content: space-between;
+   flex-direction: row-reverse;
 }
 
-.hero-img {
-   position: absolute;
-   left: 70em;
-   bottom: 15em;
-   z-index: 10;
-   transition: 0.5s;
-}
-
-.hero-img img {
-   width: 400px;
-}
-
-.blob {
-   position: absolute;
-   left: 44em;
-   bottom: 1em;
-   width: 69em;
-}
-
-.blob svg {
-   width: 100%;
+.hero img {
+   width: 500px;
 }
 
 .hero-about-button {
@@ -313,24 +296,13 @@ svg {
       display: none;
    }
 
-   .hero-img {
-      position: relative;
-      left: 0em;
-      bottom: 1em;
-      z-index: 1;
-      transition: 0.5s;
+   .hero {
+      flex-direction: column;
+      align-items: center;
    }
 
-   .hero-img img {
-      width: 150px;
-   }
-
-   .blob {
-      position: absolute;
-      left: 0;
-      bottom: 19em;
-      width: 30em;
-      z-index: 0;
+   .hero img {
+      width: 250px;
    }
 
    .flex-skill {
@@ -346,6 +318,9 @@ svg {
    }
    .about-me {
       column-count: 1;
+      width: 12em;
+      text-align: center;
+      margin: 0 auto;
    }
    .certificate-row {
       flex-direction: column;
